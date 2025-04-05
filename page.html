@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> <!--кодировка символов -->
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/forPage.css') }}"> <!-- подкючение к html css-->
+    <title>детективИИ</title>
+</head>
+<body>
+        <h1 class="title">Нейросеть для расследования преступлений</h1>
+        <p>Привет!<br> На этом сайте ИИ поможет Вам раскрыть любое преступление!</p>
+        <p>С течением времени преступлений всё больше и больше, а развитие ИИ происходит молниеностно!<br>Дабы сократить количество нераскрытых преступлений и помочь правоохранительным органам, можно использовать нейросети.</p>
+        <div class="form-section">
+            <h2>Регистрируйся, чтобы оформить подписку на детективИИ!!!</h2>
+            <form action="#" method="post">
+                <label for="username">Имя пользователя:</label>
+                <input type="text" id="username" name="username" required><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required><br>
+                
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+        </div>
+        <img src = "{{ url_for('static', filename='images/crime_dask.jpg') }}" alt="Crime Desk"> <!-- вставка картинки-->
+
+
+</body>
+</html>
